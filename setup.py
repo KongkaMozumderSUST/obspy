@@ -172,6 +172,9 @@ ENTRY_POINTS = {
         'REFTEK130 = obspy.io.reftek.core',
         'RG16 = obspy.io.rg16.core',
         'DMX = obspy.io.dmx.core',
+        'ALSEP_PSE = obspy.io.alsep.core',
+        'ALSEP_WTN = obspy.io.alsep.core',
+        'ALSEP_WTH = obspy.io.alsep.core',
         ],
     'obspy.plugin.waveform.TSPAIR': [
         'isFormat = obspy.io.ascii.core:_is_tspair',
@@ -293,6 +296,18 @@ ENTRY_POINTS = {
     'obspy.plugin.waveform.DMX': [
         'isFormat = obspy.io.dmx.core:_is_dmx',
         'readFormat = obspy.io.dmx.core:_read_dmx',
+    ],
+    'obspy.plugin.waveform.ALSEP_PSE': [
+        'isFormat = obspy.io.alsep.core:_is_pse',
+        'readFormat = obspy.io.alsep.core:_read_pse',
+        ],
+    'obspy.plugin.waveform.ALSEP_WTN': [
+        'isFormat = obspy.io.alsep.core:_is_wtn',
+        'readFormat = obspy.io.alsep.core:_read_wtn',
+        ],
+    'obspy.plugin.waveform.ALSEP_WTH': [
+        'isFormat = obspy.io.alsep.core:_is_wth',
+        'readFormat = obspy.io.alsep.core:_read_wth',
     ],
     'obspy.plugin.event': [
         'QUAKEML = obspy.io.quakeml.core',
