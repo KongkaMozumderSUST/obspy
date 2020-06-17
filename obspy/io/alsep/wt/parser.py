@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
-from future.builtins import *  # NOQA
-
-
 def parse_wtn_frame_to_alsep_words(frame):
     alsep_words = [None] * 65
     for i in range(21):

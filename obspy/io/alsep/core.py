@@ -2,10 +2,6 @@
 """
 Apollo Lunar Surface Experiments Package (ALSEP) seismometer reader for ObsPy
 """
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
-from future.builtins import *  # NOQA
-
 import numpy as np
 
 from collections import deque

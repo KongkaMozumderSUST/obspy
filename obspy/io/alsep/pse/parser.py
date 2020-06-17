@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
-from future.builtins import *  # NOQA
-
-
 def parse_pse_frame_to_alsep_words(frame, is_old_format):
     alsep_words = [None] * 65
     if is_old_format is True:
